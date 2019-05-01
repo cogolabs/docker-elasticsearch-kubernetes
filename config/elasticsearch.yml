@@ -1,5 +1,9 @@
 cluster:
   name: ${CLUSTER_NAME}
+  initial_master_nodes:
+    - es-master-0
+    - es-master-1
+    - es-master-2
 
 node:
   master: ${NODE_MASTER}
@@ -21,7 +25,7 @@ bootstrap:
   memory_lock: ${MEMORY_LOCK}
 
 http:
-  enabled: ${HTTP_ENABLE}
+#  enabled: ${HTTP_ENABLE}
   compression: true
   cors:
     enabled: ${HTTP_CORS_ENABLE}

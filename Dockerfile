@@ -1,6 +1,6 @@
-FROM quay.io/pires/docker-elasticsearch:6.4.2
+FROM brainloop/docker-elastic:7.0.1
 
-MAINTAINER pjpires@gmail.com
+MAINTAINER andrew.webber@brainloop.com
 
 # Override config, otherwise plug-in install will fail
 ADD config /elasticsearch/config
