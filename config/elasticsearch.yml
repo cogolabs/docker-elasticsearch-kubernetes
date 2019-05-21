@@ -1,3 +1,4 @@
+xpack.security.enabled: false
 cluster:
   name: ${CLUSTER_NAME}
   initial_master_nodes:

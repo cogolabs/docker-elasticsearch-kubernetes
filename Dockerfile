@@ -1,4 +1,4 @@
-FROM brainloop/docker-elastic:7.0.1
+FROM brainloop/docker-elastic:7.1.0
 
 MAINTAINER andrew.webber@brainloop.com
 
@@ -10,3 +10,4 @@ ENV DISCOVERY_SERVICE elasticsearch-discovery
 
 # Kubernetes requires swap is turned off, so memory lock is redundant
 ENV MEMORY_LOCK false
+RUN rm -rf /elasticsearch/plugins/x-pack/x-pack-ml
