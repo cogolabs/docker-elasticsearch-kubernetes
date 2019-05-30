@@ -1,6 +1,4 @@
-FROM brainloop/docker-elastic:7.1.0
-
-MAINTAINER andrew.webber@brainloop.com
+FROM brainloop/docker-elastic:7.1.0.1
 
 # Override config, otherwise plug-in install will fail
 ADD config /elasticsearch/config
