@@ -1,4 +1,4 @@
-FROM brainloop/docker-elastic:7.1.0.1
+FROM brainloop/docker-elasticsearch-kubernetes:7.1.0.1
 
 # Override config, otherwise plug-in install will fail
 ADD config /elasticsearch/config
